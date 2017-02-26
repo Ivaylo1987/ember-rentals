@@ -29,7 +29,7 @@ export default function () {
   this.get('/rentals', function() {
     return {
       data: [{
-        type: 'rentals',
+        type: 'rental',
         id: 'grand-old-mansion',
         attributes: {
           title: 'Grand Old Mansion',
@@ -40,7 +40,7 @@ export default function () {
           image: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg'
         }
       }, {
-        type: 'rentals',
+        type: 'rental',
         id: 'urban-living',
         attributes: {
           title: 'Urban Living',
