@@ -7,7 +7,7 @@ export default Ember.Component.extend({
   init() {
     this._super(...arguments);
     this.get('filter')('').then((results) => this.set('results', results));
-  },
+  }, 
 
   actions: {
     handleFilterEntry() {
@@ -16,5 +16,4 @@ export default Ember.Component.extend({
       filterAction(filterInputValue).then((filterResults) => this.set('results', filterResults));
     }
   }
-
 });
